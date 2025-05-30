@@ -134,6 +134,110 @@ const books = [
   }
 ];
 
+    db.books.insertMany([
+  {
+    title: "Atomic Habits",
+    author: "James Clear",
+    genre: "Self-help",
+    published_year: 2020,
+    price: 20,
+    in_stock: true,
+    pages: 320,
+    publisher: "Penguin"
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    genre: "Dystopian",
+    published_year: 1968,
+    price: 18,
+    in_stock: false,
+    pages: 328,
+    publisher: "Secker & Warburg"
+  },
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    genre: "Fiction",
+    published_year: 2018,
+    price: 15,
+    in_stock: true,
+    pages: 281,
+    publisher: "J.B. Lippincott & Co."
+  },
+  {
+    title: "Brave New World",
+    author: "Aldous Huxley",
+    genre: "Science Fiction",
+    published_year: 1962,
+    price: 12,
+    in_stock: true,
+    pages: 268,
+    publisher: "Chatto & Windus"
+  },
+  {
+    title: "The Road",
+    author: "Cormac McCarthy",
+    genre: "Classics",
+    published_year: 2006,
+    price: 18,
+    in_stock: true,
+    pages: 287,
+    publisher: "Knopf"
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    genre: "Classics",
+    published_year: 1925,
+    price: 18,
+    in_stock: true,
+    pages: 180,
+    publisher: "Scribner"
+  },
+  {
+    title: "Moby Dick",
+    author: "Herman Melville",
+    genre: "Science Fiction",
+    published_year: 1927,
+    price: 12,
+    in_stock: true,
+    pages: 635,
+    publisher: "Harper & Brothers"
+  },
+  {
+    title: "The Catcher in the Rye",
+    author: "J. D. Salinger",
+    genre: "Fiction",
+    published_year: 1925,
+    price: 12,
+    in_stock: true,
+    pages: 234,
+    publisher: "Little, Brown and Company"
+  },
+  {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    genre: "Classics",
+    published_year: 1928,
+    price: 12,
+    in_stock: true,
+    pages: 310,
+    publisher: "George Allen & Unwin"
+  },
+  {
+    title: "Fahrenheit 451",
+    author: "Ray Bradbury",
+    genre: "Dystopian",
+    published_year: 1953,
+    price: 25,
+    in_stock: true,
+    pages: 158,
+    publisher: "Ballantine Books"
+  }
+]);
+    
+
 // Function to insert books into MongoDB
 async function insertBooks() {
   const client = new MongoClient(uri);
